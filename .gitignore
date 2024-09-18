@@ -1,3 +1,6 @@
 .DS_Store
 
 build/
+.vscode/
+fc_base/
+.cache/
