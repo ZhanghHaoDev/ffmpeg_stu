@@ -1,8 +1,8 @@
 ﻿#include "avformat_model.h"
 
 extern "C"{
-    #include <libavutil/avutil.h>
-    #include <libavformat/avformat.h>
+    #include "libavutil/avutil.h"
+    #include "libavformat/avformat.h"
 }
 #include "glog/logging.h"
 
@@ -19,8 +19,6 @@ avformat_model::~avformat_model(){
 
 int avformat_model::demuxing(std::string input_file){
     int error_code = 0;
-
-    LOG (INFO) << "demuxing " << input_file;
 
     return error_code;
 }

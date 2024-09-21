@@ -1,9 +1,10 @@
 ﻿#include "avformat_model.h"
 
-int main(int argc, char* argv[]){
+#include <string>
+
+#include "gtest/gtest.h"
+
+TEST(avformat_model,demuxing_test){
     avformat_model avformat_model;
-
-    avformat_model.demuxing("test.mp4");
-
-    return 0;
+    EXPECT_EQ(avformat_model.demuxing("test.mp4"),0);
 }

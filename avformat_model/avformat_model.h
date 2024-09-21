@@ -10,6 +10,8 @@ public:
 
     int demuxing(std::string input_file);
 
+    // TODO 实现ffmpeg官方例子的功能
+
 private:
 
 };

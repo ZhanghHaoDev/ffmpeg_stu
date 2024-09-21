@@ -17,4 +17,5 @@ include(gflag)
 include(gtest)
 
 add_subdirectory(avformat_model)
+add_subdirectory(examples_model)
 add_subdirectory(test)
