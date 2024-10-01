@@ -24,3 +24,18 @@ TEST(examples_model,audio_encode_pcm_test){
     examples_model examples;
     EXPECT_EQ(examples.audio_encode_pcm(print_info_file_2, audio_encode_pcm_file),0);
 }
+
+TEST(examples_model,parse_mp4_file_test){
+    examples_model examples;
+    EXPECT_EQ(examples.parse_mp4_file(print_info_file_1),0);
+}
+
+TEST(examples_model,video_extract_audio_test){
+    examples_model model;
+    EXPECT_EQ(model.video_extract_audio(print_info_file_1,"./test.aac"),0);
+}
+
+TEST(examples_model,avio_list_dir_test){
+    examples_model model;
+    EXPECT_EQ(model.avio_list_dir("../"),0);
+}
